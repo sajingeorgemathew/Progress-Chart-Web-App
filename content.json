@@ -1,0 +1,87 @@
+{
+  "title": "Development Phases",
+  "subtitle": "Updated as of 2025-01-13.",
+  "phases": [
+    {
+      "type": "week",
+      "title": "Week 1"
+    },
+    {
+      "title": "Phase 0 - Foundation",
+      "tag": "Setup",
+      "status": "Completed",
+      "items": [
+        "Create GitHub repo",
+        "Create Next.js app (Tailwind included)",
+        "Add .env.example + README \"how to run\"",
+        "Set up Supabase project (dev)",
+        "Connect app to Supabase (client init)"
+      ]
+    },
+    {
+      "title": "Phase 1 - Auth + Roles",
+      "tag": "Required",
+      "status": "In progress",
+      "items": [
+        "Login / logout",
+        "Create profiles table",
+        "On signup, create profile row",
+        "Add roles (admin / student / alumni)",
+        "Turn on RLS + policies"
+      ]
+    },
+    {
+      "type": "week",
+      "title": "Week 2-3"
+    },
+    {
+      "title": "Phase 2 - Directory + Profiles",
+      "tag": "Community",
+      "status": "Upcoming",
+      "items": [
+        "Directory list + search",
+        "Profile page",
+        "Edit own profile",
+        "Deliverable: A working \"community directory.\""
+      ]
+    },
+    {
+      "title": "Phase 3 - Admin Broadcast Posts",
+      "tag": "Broadcast",
+      "status": "Upcoming",
+      "items": [
+        "posts table",
+        "Admin create post page",
+        "Feed page",
+        "Visibility rules (all/alumni/students)",
+        "Deliverable: Admin can post, members can read."
+      ]
+    },
+    {
+      "type": "week",
+      "title": "Week 4-5"
+    },
+    {
+      "title": "Phase 4 - Events + RSVP",
+      "tag": "Events",
+      "status": "Upcoming",
+      "items": [
+        "events + event_rsvps",
+        "Create event (admin)",
+        "RSVP (members)",
+        "Deliverable: Events feature."
+      ]
+    },
+    {
+      "title": "Phase 5 - Messaging (1:1 only)",
+      "tag": "Messaging",
+      "status": "Upcoming",
+      "items": [
+        "conversations, members, messages",
+        "Create conversation",
+        "Send/receive messages",
+        "Deliverable: Private messaging."
+      ]
+    }
+  ]
+}

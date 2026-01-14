@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Toronto Academy of Education - Project Portal</title>
+    <meta name="description" content="Premium client portal for Toronto Academy of Education development tracking" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <video id="background-video" autoplay loop muted playsinline>
+      <source src="assets/backround.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay"></div>
+
+    <canvas id="particle-canvas"></canvas>
+
+    <div class="gradient-orb orb-1"></div>
+    <div class="gradient-orb orb-2"></div>
+    <div class="gradient-orb orb-3"></div>
+
+    <main class="shell">
+      <section class="intro">
+        <div class="title-box">
+          <div class="logo-wrap">
+            <img src="assets/logo.png" alt="Toronto Academy of Education logo" />
+          </div>
+          <h1>Toronto Academy of Education</h1>
+          <p class="subtitle">Community Web App</p>
+          <div class="stats-grid">
+            <div class="stat-item">
+              <span class="stat-number" id="total-phases">0</span>
+              <span class="stat-label">Total Phases</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" id="completed-phases">0</span>
+              <span class="stat-label">Completed</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" id="progress-percent">0%</span>
+              <span class="stat-label">Progress</span>
+            </div>
+          </div>
+        </div>
+        <button class="premium-button" id="refresh">
+          <span class="button-content">
+            <svg class="refresh-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/>
+            </svg>
+            Refresh
+          </span>
+        </button>
+      </section>
+
+      <section class="roadmap">
+        <div class="roadmap-head">
+          <div>
+            <h2 id="page-title">Development Phases</h2>
+            <p id="page-subtitle">Track what is shipping and what is next.</p>
+          </div>
+          <div class="progress-ring-container">
+            <svg class="progress-ring" width="120" height="120">
+              <circle class="progress-ring-bg" cx="60" cy="60" r="54" />
+              <circle class="progress-ring-circle" cx="60" cy="60" r="54" id="progress-circle" />
+            </svg>
+            <div class="progress-ring-text">
+              <span class="progress-ring-percent" id="ring-percent">0%</span>
+              <span class="progress-ring-label">Complete</span>
+            </div>
+          </div>
+        </div>
+        <div id="phase-list" class="phase-list"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
