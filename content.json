@@ -1,6 +1,6 @@
 {
   "title": "Development Phases",
-  "subtitle": "Updated as of 2025-01-13.",
+  "subtitle": "Updated as of 2025-01-16.",
   "phases": [
     {
       "type": "week",
@@ -21,7 +21,7 @@
     {
       "title": "Phase 1 - Auth + Roles",
       "tag": "Required",
-      "status": "In progress",
+      "status": "Completed",
       "items": [
         "Login / logout",
         "Create profiles table",
@@ -37,7 +37,7 @@
     {
       "title": "Phase 2 - Directory + Profiles",
       "tag": "Community",
-      "status": "Upcoming",
+      "status": "Completed",
       "items": [
         "Directory list + search",
         "Profile page",
